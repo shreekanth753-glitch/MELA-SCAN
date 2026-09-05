@@ -11,7 +11,10 @@ from model import MelaScanCNN
 # ============================================================
 # CONFIGURATION
 # ============================================================
-MODEL_PATH = "mela_scan_model.pth"
+MODEL_PATH = os.path.join(
+    "models",
+    "mela_scan_model.pth"
+)
 
 CLASS_NAMES = [
     "Healthy",
